@@ -1,6 +1,7 @@
 name: Deneme
 on:
-  branches: [ main ]
+  push:
+    branches: [ main ] 
 
 jobs:
   run_tests:
@@ -9,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run script file
-      run: sh ./test.sh
+      run: sh
