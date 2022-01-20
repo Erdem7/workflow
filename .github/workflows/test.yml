@@ -1,7 +1,8 @@
 name: Deneme
 on:
-  push:
-    branches: [ main ] 
+  branches: [ main ]
+  schedule: 
+  - cron: "*/5 * * * *"
 
 jobs:
   run_tests:
